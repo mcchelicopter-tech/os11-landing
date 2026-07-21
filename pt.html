@@ -191,6 +191,13 @@
             color: var(--accent-blue) !important;
         }
 
+        .cta-button.audio-cta-btn {
+            background-color: transparent;
+            border: 2px solid var(--accent-blue);
+            color: var(--accent-blue) !important;
+            box-shadow: var(--neon-glow);
+        }
+
         .cta-button:hover {
             transform: translateY(-2px);
             opacity: 0.9;
@@ -341,6 +348,11 @@
                 <div class="cta-container">
                     <a href="mailto:mcchelicopter@gmail.com?subject=Solicitação%20de%20Pitch%20Deck%20-%20OS%2011" class="cta-button deck-btn">Solicitar Pitch Deck Executivo</a>
                     <a href="https://wa.me/5511947018996?text=Olá,%20gostaria%20de%20propostas%20sobre%20os%20direitos%20de%20adaptação%20de%20OS%2011." target="_blank" class="cta-button stream-btn">Negociar Direitos (IP)</a>
+                    
+                    <!-- Call to Action CTAs de Destaque para Validação Executiva -->
+                    <a href="#teaser-video-section" class="cta-button audio-cta-btn">▶ Ver Teaser Visual (88 Hz)</a>
+                    <a href="#audio-podcast-section" class="cta-button audio-cta-btn">🎧 Ouvir Audio Pitch</a>
+
                     <a href="https://a.co/d/016netbJ" target="_blank" class="cta-button">Adquirir na Amazon KDP</a>
                 </div>
             </div>
@@ -357,18 +369,19 @@
                     <p>Uma obra de <strong>Hard Sci-Fi</strong> de alto conceito desenhada para o mercado global de streaming. Combina rigor científico palpável, isolamento extremo e uma corrida alucinante contra o colapso sistêmico.</p>
                 </div>
 
-                <!-- Teaser Conceitual -->
-                <div class="section-panel">
+                <!-- Teaser Conceitual (Com ID para o CTA) -->
+                <div class="section-panel" id="teaser-video-section">
                     <h2 class="section-title">Teaser Conceitual (Pitch Reel)</h2>
+                    <p style="margin-bottom: 15px; color: var(--text-muted); font-size: 0.95rem;">Valide a atmosfera visual e o tom do universo instantaneamente:</p>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/-ykOD5r_nPM" title="OS 11 - Teaser Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
-                <!-- Podcast -->
-                <div class="section-panel">
+                <!-- Podcast / Audio Pitch (Com ID para o CTA) -->
+                <div class="section-panel" id="audio-podcast-section">
                     <h2 class="section-title">Audio Pitch (Podcast Oficial da Obra)</h2>
-                    <p>Mergulhe nos bastidores e na ciência por trás do universo de OS 11 através do nosso podcast oficial.</p>
+                    <p>Mergulhe nos bastidores e na ciência por trás do universo de OS 11 através do nosso podcast oficial (validação narrativa em 88 Hz).</p>
                     <div style="margin-top: 20px; text-align: center;">
                         <audio controls preload="metadata" style="width: 100%; max-width: 500px; accent-color: var(--accent-blue);">
                             <source src="podcast.m4a" type="audio/mp4">
